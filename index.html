@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATBOT</title>
+    <link rel="stylesheet" href="chatbot.css"/>
+</head>
+<body>
+    <div class="chat-wrap">
+
+<aside class="sidebar">
+<div class="brand"><span class="dot"></span>Diamond Chatbot</div>
+
+<!---NEW CHAT-->
+<div><button id="newConvo" 
+             class="new-btn">+ New Chat</button></div>
+
+<div class="convos" 
+     id="convoList"></div>
+
+</aside>
+
+<!---CHAT AREA-->
+<section class="chat-area">
+<div class="chat-header">
+<div class="title">Chatbot</div>
+<div class="meta">Press Enter to send</div>
+</div>
+
+<!---MESSAGES-->
+<div class="messages" id="messages"></div>
+
+<!---COMPOSER-->
+<div class="composer">
+<div style="flex:1">
+<div class="quick" id="quickReplies"></div>
+<div contenteditable="true" 
+     id="input" 
+     class="input" 
+     role="textbox" 
+     aria-label="Message input"></div>
+</div>
+
+<!---BTN SEND-->
+<button id="sendBtn" 
+        class="send">Send</button>
+</div>
+
+<!---DESCPRIPTION-->
+<footer class="small">This is a simple local chatbot design</footer>
+</section>
+</div>
+<script src="chatbot.js"></script>
+</body>
+</html>
